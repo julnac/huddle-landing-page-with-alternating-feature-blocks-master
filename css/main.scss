@@ -1,0 +1,191 @@
+body {
+    // display: block;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    font-size: 18px;
+    // text-align: center;
+    font-family: 'Poppins', sans-serif;
+    // margin: 0;
+}
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very_Pale_Cyan: hsl(193, 100%, 96%);
+    --Very_Dark_Cyan: hsl(192, 100%, 9%);
+    --Grayish_Blue: hsl(208, 11%, 55%);
+    --Pale_Grayish_Blue: hsl(208, 17%, 81%);
+
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+header{
+    background-color: var(--Very_Pale_Cyan);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+    img{
+        width: 11em;
+    }
+    button{
+        background-color: white;
+        border: none;
+        border-radius: 10em;
+        padding: .8em 3em;
+        box-shadow: 0 0 7px var(--Pale_Grayish_Blue);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em 3em 4em;
+    height: 30em;
+
+    .hero-section__image{
+        width: 55%;
+        height: 100%;
+        background-image: url(../images/illustration-mockups.svg);
+        background-position: center;
+        background-size: contain;
+        // object-fit: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .hero-section__text{
+        width: 26em;
+        h1{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: var(--Very_Dark_Cyan);
+            font-size: 2.5rem;
+            margin: .7em 0;
+            line-height: 1.3em;
+        }
+        
+        button{
+            background-color: var(--Pink);
+            border: none;
+            border-radius: 10em;
+            padding: 1em 4em;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            margin: 1em 0;
+            a{
+                color: var(--Very_Pale_Cyan);
+                text-decoration: none;
+            }
+        }
+    }
+}
+.cards{
+    padding: 4em 0;
+}
+.card {
+    margin: 4em;
+    border-radius: 1em;
+    box-shadow: 0 0 7px var(--Pale_Grayish_Blue);
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    img{
+        // width: 100%;
+        height: 23em;
+    }
+    .card__text{
+        padding: 5em 6em;
+        
+    }
+}
+.pop-up{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    box-shadow: 0 0 7px var(--Pale_Grayish_Blue);
+    padding: 2em;
+    text-align: center;
+    max-width: 35em;
+    background: white;
+    z-index: 4;
+    position: relative;
+    top: 3em;
+
+    button{
+        background-color: var(--Pink);
+        border: none;
+        border-radius: 10em;
+        padding: 1em 4em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        box-shadow: 0 0 7px var(--Pale_Grayish_Blue);
+        
+        a{
+            color: var(--Very_Pale_Cyan);
+            text-decoration: none;
+        }
+    }
+}
+footer{
+    background-color: var(--Very_Dark_Cyan);
+    margin-top: 0em;
+    z-index: 0;
+    padding: 8em 4em 2em 4em;
+    color: white;
+    svg{
+        // margin: 0;
+        height: 3em;
+        width: 50%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1.3fr .8fr .8fr 1.2fr;
+        grid-template-rows: 1fr .3fr;
+       .f-contact-item{
+        display: flex;
+        margin: 1em 0;
+        padding-right: 10%;
+        p{
+            margin: 0;
+        }
+        img{
+            width: 1em;
+            height: 1em;
+            margin-right: 1em;
+        }
+       }
+       .f-list{
+        ul{
+            list-style: none;
+            a{
+            text-decoration: none;
+            color: white;
+            }
+        }
+       }
+       .f-socials{
+        padding-top: 1em;
+        align-self: stretch;
+        i{
+            border: .1em solid white;
+            border-radius: 100%;
+            padding: .3em;
+            margin: .3em;
+        }
+       }
+       .copy{
+        grid-column-start: 4;
+       }
+    }
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
